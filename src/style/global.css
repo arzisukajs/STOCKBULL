@@ -1,25 +1,25 @@
-/*? global clearing */
+/* ================= GLOBAL RESET ================= */
 *,
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --light: #f7f7f7;
-    --dark: #222222;
-    --gap-primary: 16px;
-    --gap-secondary: 8px;
+  --light: #f7f7f7;
+  --dark: #222222;
 }
 
 body {
-    background-color: var(--dark);
-    color: var(--light);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* ================= NAVBAR ================= */
 .navbar {
   width: 100%;
   background: #0b0f14;
@@ -75,22 +75,14 @@ body {
   gap: 16px;
 }
 
-.login {
-  color: #cfd6e4;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.login:hover {
-  color: #ffffff;
-}
-
+.login,
 .register {
   color: #cfd6e4;
   text-decoration: none;
   font-size: 14px;
 }
 
+.login:hover,
 .register:hover {
   color: #ffffff;
 }
@@ -111,19 +103,17 @@ body {
   opacity: 0.85;
 }
 
-/* Hero Section */
+/* ================= HERO ================= */
 .hero {
   min-height: 90vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  padding: 100px 20px 60px;
   background: radial-gradient(circle at center, #090f1b 0%, #010410 60%);
   text-align: center;
-  padding: 80px 20px 40px;
 }
 
 .hero-container {
-  max-width: 900px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* Title */
@@ -147,9 +137,101 @@ body {
 
 /* Description */
 .hero-desc {
-  font-size: 16px;
+  font-size: 20px;
   color: #cbd5e1;
   line-height: 1.7;
   max-width: 720px;
-  margin: auto;
+  margin: 0 auto 56px;
+}
+
+/* ================= VIDEO HERO ================= */
+.video-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Card */
+.yt-hero {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 520px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  background-image: url("../assets/images/stock.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlay */
+.yt-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Play Button */
+.yt-hero__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #2563eb;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Text Content */
+.yt-hero__content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 2;
+  color: #ffffff;
+  text-align: left;
+}
+
+.yt-hero__subtitle {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.yt-hero__title {
+  margin-top: 8px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+  }
+
+  .yt-hero {
+    height: 360px;
+  }
+
+  .yt-hero__title {
+    font-size: 28px;
+  }
+
+  .yt-hero__content {
+    left: 24px;
+    bottom: 24px;
+  }
 }
