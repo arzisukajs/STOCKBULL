@@ -13,8 +13,8 @@ body {
 }
 
 body {
-  background-color: var(--dark);
-  color: var(--light);
+  /* background-color: var(--dark);
+  color: var(--light); */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -145,24 +145,45 @@ body {
 }
 
 /* ================= VIDEO HERO ================= */
-.video-container {
-  max-width: 1000px;
-  margin: 0 auto;
+/* ================= HERO ================= */
+.hero {
+  padding: 100px 0 80px;
+  background: radial-gradient(circle at center, #090f1b 0%, #010410 60%);
+  text-align: center;
 }
 
-/* Card */
+/* Teks tetap center & sempit */
+.hero-container {
+  max-width: 900px;
+  margin: 0 auto 56px;
+  padding: 0 20px;
+}
+
+/* ================= VIDEO LEBAR ================= */
+.video--wide {
+  width: 100%;
+  padding: 0 32px;
+  /* jarak kiri-kanan (20–40px) */
+}
+
+/* Card video */
 .yt-hero {
   position: relative;
   display: block;
   width: 100%;
-  height: 520px;
+  height: 730px;
   border-radius: 20px;
   overflow: hidden;
   text-decoration: none;
+
   background-image: url("../assets/images/stock.jpg");
   background-size: cover;
   background-position: center;
+
+  border: 2px solid #424954;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
 }
+
 
 /* Overlay */
 .yt-hero__overlay {
@@ -189,7 +210,7 @@ body {
   z-index: 2;
 }
 
-/* Text Content */
+/* Text */
 .yt-hero__content {
   position: absolute;
   bottom: 40px;
@@ -200,7 +221,6 @@ body {
 }
 
 .yt-hero__subtitle {
-  display: block;
   font-size: 14px;
   letter-spacing: 2px;
   opacity: 0.8;
@@ -214,12 +234,8 @@ body {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 36px;
-  }
-
-  .hero-desc {
-    font-size: 16px;
+  .video--wide {
+    padding: 0 20px;
   }
 
   .yt-hero {
@@ -233,5 +249,101 @@ body {
   .yt-hero__content {
     left: 24px;
     bottom: 24px;
+  }
+}
+
+/* ================= STOCK SECTION ================= */
+.stock-section {
+  padding: 80px 0;
+  background: radial-gradient(circle at center, #090f1b 0%, #010410 70%);
+  text-align: center;
+  overflow: hidden;
+}
+
+.stock-desc {
+  color: #cbd5e1;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* ================= MARQUEE ================= */
+.stock-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.stock-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+}
+
+/* Pause saat hover */
+.stock-marquee:hover .stock-track {
+  animation-play-state: paused;
+}
+
+/* ================= CARD ================= */
+.stock-card {
+  min-width: 260px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stock-card img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.stock-info {
+  flex: 1;
+  text-align: left;
+}
+
+.stock-info strong {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.stock-info span {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.stock-gain {
+  font-size: 14px;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.stock-gain.big {
+  color: #22c55e;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .stock-card {
+    min-width: 220px;
   }
 }
