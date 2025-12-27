@@ -339,10 +339,59 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* WRAPPER AGAR TENGAH */
 .testimonial-badge-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
+}
+
+/* TOMBOL TESTIMONIAL */
+.testimonial-badge {
+  padding: 8px 26px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #4cc9ff;
+  background: linear-gradient(
+    180deg,
+    rgba(76, 201, 255, 0.18),
+    rgba(76, 201, 255, 0.04)
+  );
+
+  border: 1px solid rgba(76, 201, 255, 0.45);
+  border-radius: 999px;
+
+  box-shadow:
+    0 0 0 1px rgba(76, 201, 255, 0.25),
+    0 0 18px rgba(76, 201, 255, 0.35),
+    inset 0 0 12px rgba(76, 201, 255, 0.15);
+
+  animation: testimonialGlow 2.8s ease-in-out infinite;
+}
+
+/* ANIMASI GLOW HALUS */
+@keyframes testimonialGlow {
+  0% {
+    box-shadow:
+      0 0 0 1px rgba(76, 201, 255, 0.25),
+      0 0 14px rgba(76, 201, 255, 0.25),
+      inset 0 0 10px rgba(76, 201, 255, 0.12);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(76, 201, 255, 0.5),
+      0 0 30px rgba(76, 201, 255, 0.55),
+      inset 0 0 18px rgba(76, 201, 255, 0.25);
+  }
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(76, 201, 255, 0.25),
+      0 0 14px rgba(76, 201, 255, 0.25),
+      inset 0 0 10px rgba(76, 201, 255, 0.12);
+  }
 }
 
 
