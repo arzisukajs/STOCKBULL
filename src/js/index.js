@@ -1,36 +1,77 @@
-/* 
-NOTES:
-to make this asynchronous test work, you need to change parameters in the HTML file. 
-take a look at click listener on the button, you will see "babypack".
-change it to "starterpack". 
-done!
-*/
+const track = document.querySelector(".stock-track");
 
-console.log('javascript ready...')
+let scrollSpeed = 0.5;
 
-//! Responsive Navigation BAR 🎉
-const showMobileNav = () => {
-  var navbar = document.getElementById("navbar");
-  navbar.className === "navibar" ? navbar.className += " responsive" : navbar.className = "navibar"
+function marqueeLoop() {
+  track.scrollLeft += scrollSpeed;
+
+  if (track.scrollLeft >= track.scrollWidth / 2) {
+    track.scrollLeft = 0;
+  }
+
+  requestAnimationFrame(marqueeLoop);
 }
 
-//! Notification Bell 
-const notification = (pack) => {
-    alert('notification checking..., please click OK to continue')
-    return new Promise((success, failed) => {
-        if (pack != "starterpack") failed("your pack is not starterpack, please read the notes on js file")
-        setTimeout(() => {
-            success("Notification Success! 👏")
-        }, 1200)
-    })
+if (track) marqueeLoop();
+
+const marquee = document.querySelector(".stock-marquee");
+
+if (marquee) {
+  marquee.addEventListener("mouseenter", () => {
+    scrollSpeed = 0;
+  });
+
+  marquee.addEventListener("mouseleave", () => {
+    scrollSpeed = 0.5;
+  });
 }
 
-//! asynchronous trigger for notification bell
-async function showPopup(params) {
-    try {
-        const popup = await notification(params);
-        alert(popup)
-    } catch (err) {
-        alert(err)
+const revealElements = document.querySelectorAll(
+  ".hero-title, .hero-desc, .stock-card"
+);
+
+const revealOnScroll = () => {
+  const windowHeight = window.innerHeight;
+
+  revealElements.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 80) {
+      el.classList.add("active");
     }
+  });
+};
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
+const counters = document.querySelectorAll(".stock-gain");
+
+counters.forEach(counter => {
+  const target = parseInt(counter.innerText.replace(/[^0-9]/g, ""));
+  let count = 0;
+
+  const updateCounter = () => {
+    if (count < target) {
+      count += Math.ceil(target / 60);
+      counter.innerText = `${count}%`;
+      requestAnimationFrame(updateCounter);
+    } else {
+      counter.innerText = counter.innerText;
+    }
+  };
+
+  updateCounter();
+});
+
+const heroVideo = document.querySelector(".yt-hero");
+
+if (heroVideo) {
+  heroVideo.addEventListener("mouseenter", () => {
+    heroVideo.classList.add("hovered");
+  });
+
+  heroVideo.addEventListener("mouseleave", () => {
+    heroVideo.classList.remove("hovered");
+  });
 }
