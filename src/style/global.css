@@ -693,11 +693,11 @@ body {
   position: absolute;
   left: 50%;
   top: 0;
-  width: 2px;
+  width: 1px;
   height: 100%;
   background: linear-gradient(to bottom,
       transparent,
-      #0a84ff,
+      #60a0e0,
       transparent);
   transform: translateX(-50%);
 }
@@ -716,15 +716,17 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 44px;
-  height: 44px;
-  background: #0a84ff;
+  width: 48px;
+  height: 48px;
+  background: #000101;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
   z-index: 2;
+  border: 2px solid #4da3ff;
+  box-shadow: 0 0 12px rgba(77, 163, 255, 0.4);
 }
 
 /* CONTENT & IMAGE */
