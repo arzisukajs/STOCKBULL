@@ -492,11 +492,11 @@ body {
 
 /* ================= ANIMATION ================= */
 .slider-left {
-  animation: slideLeft 12s linear infinite;
+  animation: slideLeft 16s linear infinite;
 }
 
 .slider-right {
-  animation: slideRight 12s linear infinite;
+  animation: slideRight 16s linear infinite;
 }
 
 .slider:hover {
