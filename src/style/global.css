@@ -562,7 +562,7 @@ body {
   display: inline-block;
   padding: 8px 18px;
   border: 1px solid #cacff8;
-  border-radius: 30px ;
+  border-radius: 30px;
   font-size: 14px;
   color: #a8b3d4;
   margin-bottom: 20px;
@@ -660,6 +660,154 @@ body {
   background: #1f3bff;
   border-color: #1f3bff;
 }
+
+/* ================= BENEFIT SECTION ================= */
+.benefit-section {
+  background: #050505;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.benefit-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.badge {
+  padding: 8px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* ================= TIMELINE ================= */
+.benefit-timeline {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.benefit-timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom,
+      transparent,
+      #0a84ff,
+      transparent);
+  transform: translateX(-50%);
+}
+
+/* ================= ITEM ================= */
+.benefit-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+/* NUMBER */
+.benefit-item .number {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 44px;
+  background: #0a84ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  z-index: 2;
+}
+
+/* CONTENT & IMAGE */
+.content,
+.image {
+  width: 42%;
+}
+
+.content h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.content h3 span {
+  color: #0a84ff;
+}
+
+.content p {
+  color: #aaa;
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ================= GANJIL (TEXT KIRI - IMAGE KANAN) ================= */
+.right-image {
+  flex-direction: row;
+}
+
+.right-image .content {
+  padding-right: 40px;
+}
+
+.right-image .image {
+  padding-left: 40px;
+}
+
+/* ================= GENAP (IMAGE KIRI - TEXT KANAN) ================= */
+.left-image {
+  flex-direction: row;
+}
+
+.left-image .image {
+  padding-right: 40px;
+}
+
+.left-image .content {
+  padding-left: 40px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .benefit-timeline::before {
+    left: 20px;
+  }
+
+  .benefit-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 60px;
+  }
+
+  .benefit-item .number {
+    left: 20px;
+    transform: none;
+  }
+
+  .content,
+  .image {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .image {
+    margin-bottom: 20px;
+  }
+}
+
 
 
 /* ================= RESPONSIVE ================= */
