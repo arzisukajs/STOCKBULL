@@ -355,11 +355,9 @@ body {
   text-transform: uppercase;
 
   color: #4cc9ff;
-  background: linear-gradient(
-    180deg,
-    rgba(76, 201, 255, 0.18),
-    rgba(76, 201, 255, 0.04)
-  );
+  background: linear-gradient(180deg,
+      rgba(76, 201, 255, 0.18),
+      rgba(76, 201, 255, 0.04));
 
   border: 1px solid rgba(76, 201, 255, 0.45);
   border-radius: 999px;
@@ -380,12 +378,14 @@ body {
       0 0 14px rgba(76, 201, 255, 0.25),
       inset 0 0 10px rgba(76, 201, 255, 0.12);
   }
+
   50% {
     box-shadow:
       0 0 0 1px rgba(76, 201, 255, 0.5),
       0 0 30px rgba(76, 201, 255, 0.55),
       inset 0 0 18px rgba(76, 201, 255, 0.25);
   }
+
   100% {
     box-shadow:
       0 0 0 1px rgba(76, 201, 255, 0.25),
@@ -424,8 +424,8 @@ body {
   background: linear-gradient(180deg, #020617, #0b1220);
   border-radius: 18px;
   padding: 18px;
-  box-shadow: 0 15px 40px rgba(0,0,0,.55);
-  border: 1px solid rgba(255,255,255,.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .55);
+  border: 1px solid rgba(255, 255, 255, .05);
 }
 
 /* ================= HEADER ================= */
@@ -482,7 +482,7 @@ body {
 }
 
 .badge {
-  background: rgba(30,144,255,.15);
+  background: rgba(30, 144, 255, .15);
   color: #1e90ff;
   padding: 4px 10px;
   border-radius: 999px;
@@ -507,6 +507,7 @@ body {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -516,6 +517,7 @@ body {
   from {
     transform: translateX(-50%);
   }
+
   to {
     transform: translateX(0);
   }
