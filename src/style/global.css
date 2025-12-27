@@ -545,6 +545,123 @@ body {
   background: linear-gradient(to left, #020617, transparent);
 }
 
+/* ================= FOUNDERS SECTION ================= */
+.founder-section {
+  padding: 100px 8%;
+  background: radial-gradient(circle at top, #0b0f1a, #000);
+  color: #fff;
+}
+
+.founder-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 70px;
+}
+
+.founder-header .badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1px solid #1f3bff;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #4f7cff;
+  margin-bottom: 20px;
+}
+
+.founder-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.founder-header p {
+  color: #c5c5c5;
+  line-height: 1.6;
+}
+
+/* ================= CARDS ================= */
+.founder-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.founder-card {
+  background: linear-gradient(180deg, #111, #0a0a0a);
+  border-radius: 18px;
+  padding: 40px 30px;
+  text-align: center;
+  border: 1px solid #1c1c1c;
+  transition: all 0.3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-8px);
+  border-color: #1f3bff;
+  box-shadow: 0 20px 40px rgba(31, 59, 255, 0.15);
+}
+
+/* ================= AVATAR ================= */
+.avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #1f3bff, #00d4ff);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #000;
+}
+
+/* ================= TEXT ================= */
+.founder-card h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.founder-card .role {
+  font-size: 14px;
+  color: #4f7cff;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.founder-card p {
+  font-size: 14px;
+  color: #cfcfcf;
+  line-height: 1.7;
+}
+
+/* ================= SOCIAL ================= */
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #2a2a2a;
+  color: #fff;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: #1f3bff;
+  border-color: #1f3bff;
+}
+
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
   .card {
