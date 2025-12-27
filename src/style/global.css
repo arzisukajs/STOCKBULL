@@ -330,6 +330,165 @@ body {
   color: #22c55e;
 }
 
+/* ================= TESTIMONIAL SECTION ================= */
+.testimonial-section {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  padding: 90px 0;
+  overflow: hidden;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ================= SLIDER ================= */
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.slider {
+  display: flex;
+  gap: 22px;
+  width: max-content;
+}
+
+/* ================= CARD ================= */
+.card {
+  min-width: 320px;
+  background: linear-gradient(180deg, #020617, #0b1220);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.55);
+  border: 1px solid rgba(255,255,255,.05);
+}
+
+/* ================= HEADER ================= */
+.card-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.card-header img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #1e90ff;
+  object-fit: cover;
+}
+
+.card-header h4 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.card-header p {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 2px 0 0;
+  line-height: 1.3;
+
+  /* potong 2 baris */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ================= RETURN ================= */
+.return {
+  font-size: 30px;
+  font-weight: 700;
+  color: #22c55e;
+  margin: 8px 0 14px;
+}
+
+/* ================= STOCK INFO ================= */
+.stock-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  color: #cbd5f5;
+}
+
+.badge {
+  background: rgba(30,144,255,.15);
+  color: #1e90ff;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ================= ANIMATION ================= */
+.slider-left {
+  animation: slideLeft 12s linear infinite;
+}
+
+.slider-right {
+  animation: slideRight 12s linear infinite;
+}
+
+.slider:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ================= EDGE BLUR ================= */
+.slider-wrapper::before,
+.slider-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.slider-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #020617, transparent);
+}
+
+.slider-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #020617, transparent);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .card {
+    min-width: 260px;
+  }
+
+  .return {
+    font-size: 24px;
+  }
+}
+
+
 /* ================= ANIMATION ================= */
 @keyframes scroll-left {
   from {
