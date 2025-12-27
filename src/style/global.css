@@ -561,10 +561,10 @@ body {
 .founder-header .badge {
   display: inline-block;
   padding: 8px 18px;
-  border: 1px solid #1f3bff;
-  border-radius: 30px;
+  border: 1px solid #cacff8;
+  border-radius: 30px ;
   font-size: 14px;
-  color: #4f7cff;
+  color: #a8b3d4;
   margin-bottom: 20px;
 }
 
@@ -608,7 +608,7 @@ body {
   margin: 0 auto 20px;
   border-radius: 50%;
   padding: 4px;
-  background: linear-gradient(135deg, #1f3bff, #00d4ff);
+  background: linear-gradient(135deg, #babfe4, #d7e4e6);
 }
 
 .avatar img {
