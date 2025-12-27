@@ -339,6 +339,16 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.testimonial-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.testimonial-section h2 span {
+  color: #1e90ff;
+}
+
 /* ================= SLIDER ================= */
 .slider-wrapper {
   width: 100%;
