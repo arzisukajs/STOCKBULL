@@ -597,7 +597,7 @@ body {
 
 .founder-card:hover {
   transform: translateY(-8px);
-  border-color: #1f3bff;
+  border-color: #babdd3;
   box-shadow: 0 20px 40px rgba(31, 59, 255, 0.15);
 }
 
