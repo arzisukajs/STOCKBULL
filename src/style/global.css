@@ -693,11 +693,11 @@ body {
   position: absolute;
   left: 50%;
   top: 0;
-  width: 1px;
+  width: 3px;
   height: 100%;
   background: linear-gradient(to bottom,
       transparent,
-      #60a0e0,
+      #1f71c2,
       transparent);
   transform: translateX(-50%);
 }
@@ -725,7 +725,7 @@ body {
   justify-content: center;
   font-weight: 600;
   z-index: 2;
-  border: 2px solid #4da3ff;
+  border: 2px solid #077bf8;
   box-shadow: 0 0 12px rgba(77, 163, 255, 0.4);
 }
 
