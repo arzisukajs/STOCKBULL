@@ -1212,4 +1212,5 @@ body {
 .membership-section { 
   background: radial-gradient(circle at top, #111 0%, #000 60%);
   padding: 100px 20px;
+  color: #fff;
 }
