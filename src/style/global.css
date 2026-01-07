@@ -1257,5 +1257,6 @@ body {
 
 /* VIP CARD */
 .vip-card {
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
