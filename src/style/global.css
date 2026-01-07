@@ -1311,3 +1311,9 @@ body {
 .vip-right {
   text-align: right;
 }
+
+.old-price {
+  color: #777;
+  text-decoration: line-through;
+  margin-bottom: 6px;
+}
