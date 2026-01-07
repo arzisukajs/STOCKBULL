@@ -1276,3 +1276,8 @@ body {
   color: #aaa;
   margin-bottom: 6px;
 }
+
+.vip-left h3 {
+  font-size: 22px;
+  color: #ffd369;
+}
