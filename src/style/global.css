@@ -1262,4 +1262,7 @@ body {
   gap: 40px;
   padding: 50px;
   border-radius: 24px;
+  background: linear-gradient(135deg, #1a1300, #000);
+  border: 1px solid #7a5b00;
+  text-align: left;
 }
