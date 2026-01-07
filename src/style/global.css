@@ -1298,3 +1298,11 @@ body {
   position: relative;
   color: #ddd;
 }
+
+.vip-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2f6bff;
+  font-weight: bold;
+}
