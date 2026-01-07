@@ -1244,3 +1244,8 @@ body {
   margin: 0 auto 30px;
   line-height: 1.6;
 }
+
+.batch {
+  display: inline-block;
+  background: #b30000;
+}
