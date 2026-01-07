@@ -1240,4 +1240,5 @@ body {
 
 .subtitle {
   color: #bbb;
+  max-width: 700px;
 }
