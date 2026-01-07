@@ -1266,3 +1266,8 @@ body {
   border: 1px solid #7a5b00;
   text-align: left;
 }
+
+.vip-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
