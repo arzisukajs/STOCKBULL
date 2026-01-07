@@ -1323,3 +1323,8 @@ body {
   font-weight: 800;
   margin-bottom: 6px;
 }
+
+.bonus {
+  color: #00ff8f;
+  margin-bottom: 30px;
+}
