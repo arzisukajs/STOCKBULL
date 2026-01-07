@@ -1226,4 +1226,5 @@ body {
   display: inline-block;
   padding: 10px 20px;
   border: 1px solid #1f3cff;
+  border-radius: 10px;
 }
