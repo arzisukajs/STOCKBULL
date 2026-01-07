@@ -1348,6 +1348,19 @@ body {
   transform: translateY(-2px);
 }
 
+.pricing-note {
+  max-width: 900px;
+  margin: 30px auto 0;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.pricing-note p {
+  margin-bottom: 10px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .vip-card {
