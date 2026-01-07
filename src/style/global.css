@@ -1291,3 +1291,10 @@ body {
   list-style: none;
   padding: 0;
 }
+
+.vip-list li {
+  margin-bottom: 14px;
+  padding-left: 30px;
+  position: relative;
+  color: #ddd;
+}
