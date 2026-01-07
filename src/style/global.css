@@ -1317,3 +1317,9 @@ body {
   text-decoration: line-through;
   margin-bottom: 6px;
 }
+
+.price {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
