@@ -1261,4 +1261,5 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   padding: 50px;
+  border-radius: 24px;
 }
