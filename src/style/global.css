@@ -1354,3 +1354,8 @@ body {
     grid-template-columns: 1fr;
     text-align: left;
   }
+
+  .vip-right {
+    text-align: left;
+  }
+}
