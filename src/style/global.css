@@ -1223,5 +1223,5 @@ body {
 }
 
 .badge {
-  
+  display: inline-block;
 }
