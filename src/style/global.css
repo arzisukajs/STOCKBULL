@@ -1281,3 +1281,8 @@ body {
   font-size: 22px;
   color: #ffd369;
 }
+
+.vip-note {
+  color: #777;
+  margin-bottom: 30px;
+}
