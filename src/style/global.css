@@ -1329,23 +1329,24 @@ body {
   margin-bottom: 30px;
 }
 
-.vip-btn {
+.vip-cta {
   width: 100%;
-  margin-top: 30px;
+  max-width: 900px;      /* biar nggak kepanjangan */
   padding: 16px;
-  border-radius: 12px;
+  border-radius: 999px;
   border: none;
-  font-size: 16px;
-  font-weight: 700;
-  background: linear-gradient(90deg, #1f3cff, #4f7cff);
+  background: linear-gradient(90deg, #3b2cff, #5b6cff);
   color: #fff;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  box-shadow: 0 0 30px rgba(91, 108, 255, 0.5);
+  transition: all 0.25s ease;
 }
 
-
-.vip-btn:hover {
+.vip-cta:hover {
   transform: translateY(-2px);
+  box-shadow: 0 0 45px rgba(91, 108, 255, 0.8);
 }
 
 .pricing-note {
